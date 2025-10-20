@@ -10,6 +10,6 @@ Analysis of errors made by othellogpt from the paper Emergent World Representati
 
 Download and add the following files to their respective directories:
 
-- [Battery Othello]([https://drive.google.com/file/d/XXXXXXXXXXXXXXX/view?usp=sharing](https://drive.google.com/file/d/1SBraI6Xb5m2L4aithi0yGq803QQsXZLY/view?usp=drive_link) → `battery_othello/`
+- [Battery Othello]([https://drive.google.com/file/d/XXXXXXXXXXXXXXX/view?usp=sharing](https://drive.google.com/file/d/1SBraI6Xb5m2L4aithi0yGq803QQsXZLY/view?usp=drive_link]) → `battery_othello/`
 - [Othello Championship Data](https://drive.google.com/file/d/YYYYYYYYYYYYYYY/view?usp=sharing) → `data/othello_championship/`
 - [Model Checkpoints]([[https://drive.google.com/file/d/ZZZZZZZZZZZZZZZ/view?usp=sharing](https://drive.google.com/file/d/1tRTYvT0X63rMLzN0ZhudPGFjsUpiFPpL/view?usp=sharing](https://drive.google.com/file/d/1bccTOFW4CmsmYiRGDJ_y23tuVpu3NcSP/view?usp=sharing) → `ckpts/`
