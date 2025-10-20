@@ -13,3 +13,16 @@ Download and add the following files to their respective directories:
 - [Battery Othello](https://drive.google.com/file/d/1SBraI6Xb5m2L4aithi0yGq803QQsXZLY/view?usp=drive_link) → `battery_othello/`
 - [Othello Championship Data](https://drive.google.com/file/d/1tRTYvT0X63rMLzN0ZhudPGFjsUpiFPpL/view?usp=drive_link) → `data/othello_championship/`
 - [Model Checkpoints](https://drive.google.com/file/d/1bccTOFW4CmsmYiRGDJ_y23tuVpu3NcSP/view?usp=drive_link) → `ckpts/`
+
+The data is the same as used in [likenneth/othello_world](https://github.com/likenneth/othello_world), uploaded to a different Google Drive for convenience.
+
+### Generate test data
+```fish
+.generate_test_data.fish
+```
+
+### Run board analysis script
+```fish
+.board_analysis.fish
+```
+All results are already in the `board-analysis` directory.
