@@ -7,6 +7,7 @@ logging.basicConfig(
         format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S",
         level=logging.INFO,
+        force=True,
 )
 
 # make deterministic
@@ -63,10 +64,13 @@ mconf = GPTConfig(train_dataset.vocab_size, train_dataset.block_size, n_layer=8,
 model = GPTforProbing(mconf, probe_layer=args.layer)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 if args.mode == 'random':
+    logging.info('Using random initialized model')
     model.apply(model._init_weights)
 elif args.mode == 'championship':
+    logging.info('Loading championship trained model')
     load_res = model.load_state_dict(torch.load("./ckpts/gpt_championship.ckpt", map_location=device))
 elif args.mode == 'synthetic':
+    logging.info('Loading synthetic trained model')
     load_res = model.load_state_dict(torch.load("./ckpts/gpt_synthetic.ckpt", map_location=device))
 model = model.to(device)
 
